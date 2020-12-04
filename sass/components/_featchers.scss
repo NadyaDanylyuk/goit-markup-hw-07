@@ -1,0 +1,68 @@
+.featchers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.featchers-main-title {
+  display: none;
+}
+.featchers-list {
+  display: flex;
+
+  & .featchers-item::before {
+    content: "";
+    display: inline-flex;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+  }
+  & .attention::before {
+    content: "";
+    background-color: $btn-color;
+    background-image: url(../images/antenna.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65px;
+  }
+  & .punctuality::before {
+    content: "";
+    background-color: $btn-color;
+    background-image: url(../images/clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 67px;
+  }
+  & .planning::before {
+    content: "";
+    background-color: $btn-color;
+    background-image: url(../images/diagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+  }
+  & .technologies::before {
+    content: "";
+    background-color: $btn-color;
+    background-image: url(../images/astronaut.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 69px;
+  }
+
+  & .featchers-item + .featchers-item {
+    margin-left: 30px;
+  }
+}
+
+.featchers-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.featchers-text {
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+}
